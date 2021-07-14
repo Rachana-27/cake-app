@@ -1,0 +1,14 @@
+/* Common CSS file called in resources/layout/layout.blade.php */
+
+
+body{
+    background: url("../img/bg-img-2.jpg");
+    
+      background-size: cover;
+    }
+    .logo{
+        height:100px;
+    }
+    .additem{
+      justify-content: center;
+    }
