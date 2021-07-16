@@ -65,6 +65,7 @@
                                     <li><a href="#about">About us</a></li>
                                     <li><a href="/gallery">Gallery</a></li>
                                     <li><a href="#footer">Contact us</a></li>
+                                    @guest
                                     @if (Route::has('login'))
                                     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                         @auth
@@ -78,7 +79,7 @@
                                         @endauth
                                     </div>
                                     @endif
-
+                                    @endguest
                                 </ul>
                             </div>
                             <!-- end nav-collapse -->
@@ -102,7 +103,7 @@
                     <div class="banner-text">
                         <div class="banner-cell">
                             
-                            <h1> <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Order:Enjoy" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span>MADE WITH LOVE!</h1>
+                            <h1> <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="CUPCAKE!" data-colors="pink"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span>MADE WITH LOVE!</h1>
                             <h2>Sugar Crush</h2>
                             <div class="book-btn">
                                <a href="/cake/create" class="table-btn hvr-underline-from-center">Order Now!!</a>
@@ -182,7 +183,7 @@
                                 </p>
                                 <p>
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    <span><a href="#">SugarCrush1020@gmail.com</a></span>
+                                    <span><a href="#">sugarcrush@gmail.com</a></span>
                                 </p>
                             </div>
                             <!-- end footer-box-c -->
@@ -216,6 +217,15 @@
             
 
                 
-        </div>       
+        </div>     
+        
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+
+<!-- ALL JS FILES -->
+<script src="{{asset('js/all.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<!-- ALL PLUGINS -->
+<script src="{{asset('js/custom.js')}}"></script>  
     </body>
 </html>
